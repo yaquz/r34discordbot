@@ -1,0 +1,35 @@
+# Кэшированные файлы
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Виртуальное окружение
+venv/
+.env/
+*.venv/
+
+# Логи и временные файлы
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# Конфигурации IDE/редакторов
+.vscode/
+.idea/
+*.iml
+
+# Артефакты сборки и установки
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Файлы зависимостей (если используешь poetry или pipenv)
+.poetry/
+Pipfile.lock
+poetry.lock
