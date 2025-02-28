@@ -4,8 +4,11 @@ import discord
 from discord.ext import commands
 import asyncio
 import random
+from dotenv import load_dotenv
 from pyrule34 import AsyncRule34
 
+load_dotenv()
+token = os.getenv('token')
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
 # функция дабы бот не кидал один и тотже контент
@@ -34,3 +37,5 @@ async def send_picture(ctx, *, tags=""):
         except Exception as e:
             await ctx.send("что-то пошло не так а что я хуй знает пиши разрабу")
             await ctx.send(f"```{str(e)}```")
+
+bot.run(token)
