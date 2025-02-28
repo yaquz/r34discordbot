@@ -4,6 +4,7 @@ import discord
 from discord.ext import commands
 import asyncio
 import random
+import os
 from dotenv import load_dotenv
 from pyrule34 import AsyncRule34
 
